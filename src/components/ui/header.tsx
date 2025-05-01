@@ -9,8 +9,8 @@ interface HeaderProps {
 
 export function Header({}: HeaderProps) {
   return (
-    <header className="fixed top-10 flex justify-center w-full">
-      <div className="flex bg-grey w-2/3 rounded-lg justify-between px-5 py-3">
+    <header className="fixed top-10 flex justify-center w-full z-[1]">
+      <div className="flex bg-[#262626] w-3/5 rounded-lg justify-between px-5 py-3">
         <div className="flex items-center justify-center ">
           <div className="w-14">
             <Image

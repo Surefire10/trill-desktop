@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playwrite_CO, Manrope } from "next/font/google";
 import "./globals.css";
+import { ReactQueryProvider } from "@/components/providers/provider.reactQuery";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const playwrite = Playwrite_CO({
   variable: "--font-playwrite",
@@ -21,8 +23,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playwrite.variable} ${manrope.variable}`}>
-        {children}
+      <body
+        className={`${playwrite.variable} ${manrope.variable} font-manrope`}
+      >
+        <ReactQueryProvider>
+          {children}
+          {/* <ReactQueryDevtools initialIsOpen={false} /> */}
+        </ReactQueryProvider>
       </body>
     </html>
   );

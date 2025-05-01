@@ -25,7 +25,7 @@ export const Button = ({
     <button
       disabled={loading}
       className={cn(
-        `flex justify-center gap-2.5 items-center disabled:pointer-events-none disabled:opacity-50 font-manrope rounded-md px-5 py-1`,
+        `flex justify-center gap-2.5 items-center disabled:pointer-events-none disabled:opacity-50 font-manrope rounded-md px-5 py-1 bg-primary`,
         className,
         arrow === "right" && "arrow-btn-right",
         arrow === "left" && "arrow-btn-left",
