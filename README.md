@@ -1,4 +1,4 @@
-#  Guitar Chord Dashboard (Frontend)
+#  🎸  Guitar Chord Dashboard (Frontend)
 
 A sleek guitar chord dashboard built with **Next.js 15**. This frontend connects to the NestJS backend and allows users to:
 
